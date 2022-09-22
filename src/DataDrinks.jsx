@@ -1,0 +1,88 @@
+const drinks = [
+  {
+    id: 13,
+    title: "Suco Natural One® Laranja",
+    price: 5,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Natural_One_Laranja_thumb_639x324.png?mtime=20210118103439&focal=none" ,
+    amount: 1,
+  },
+  {
+    id: 14,
+    title: "Suco Natural One® Uva",
+    price: 2,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Natural_One_Uva_thumb_639x324.png?mtime=20210119185115&focal=none",
+    amount: 1,
+  },
+  {
+    id: 15,
+    title: "Suco Natural One® Maracujá",
+    price: 3,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/natural-one-maracuja-thumb_2021-02-24-143713.png?mtime=20210224113714&focal=none",
+    amount: 1,
+  },
+  {
+    id: 16,
+    title: "Pepsi®",
+    price: 6,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Pepsi-thumb_2021-09-20-103453_kyav.png?mtime=20210920103454&focal=none",
+    amount: 1,
+  },
+  {
+    id: 17,
+    title: "Pepsi® Twist",
+    price: 7,
+    img: 'https://d3sn2rlrwxy0ce.cloudfront.net/Pepsi-Twist-thumb.png?mtime=20210918000616&focal=none',
+    amount: 1,
+  },
+  {
+    id: 18,
+    title: "Pepsi® Black",
+    price: 10,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Pepsi-Black-thumb.png?mtime=20210918000732&focal=none",
+    amount: 1,
+  },
+  {
+    id: 19,
+    title: "Guaraná Antárctica®",
+    price: 12,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Guarana-thumb_2021-09-20-103342_wuyd.png?mtime=20210920103343&focal=none",
+    amount: 1,
+  },
+  {
+    id: 20,
+    title: "Guaraná Antárctica® Zero",
+    price: 4,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/Guarana-Zero-thumb.png?mtime=20210918000910&focal=none",
+    amount: 1,
+  },
+  {
+    id: 21,
+    title: "H2OH!® Limão",
+    price: 2,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/H2O_limao_thumb_639x324-100k.png?mtime=20201222080044&focal=none",
+    amount: 1,
+  },
+  {
+    id: 22,
+    title: "Lipton® Limão",
+    price: 8,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/lipton-limão-thumb.png?mtime=20210224103526&focal=none",
+    amount: 1,
+  },
+  {
+    id: 23,
+    title: "Lipton® Pêssego",
+    price: 9,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/lipton-pessego-thumb.png?mtime=20210224102901&focal=none",
+    amount: 1,
+  },
+  {
+    id: 24,
+    title: "Água de Copo",
+    price: 1,
+    img: "https://d3sn2rlrwxy0ce.cloudfront.net/agua-copo-thumb-cupom-m-d.png?mtime=20220722134022&focal=none",
+    amount: 1,
+  },
+];
+
+export default drinks;

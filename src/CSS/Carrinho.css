@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  width: 20%;
+  margin: auto;
+}
+
+.img_carri img {
+  width: 150px;
+  height: 150px;
+}
+.img_carri {
+  display: flex;
+  width: 400px;
+}
+
+.img_carri p {
+  font-weight: bold;
+  margin-left: 10px;
+  
+}
+
+.img_carri {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.add_pro{
+  display: flex;
+  margin: 10px;
+}
+.add_pro button{
+  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+.add_pro :nth-child(1):hover{
+  background-color: rgb(1, 216, 1); 
+  border: 1px solid black;
+}
+.add_pro :nth-child(3):hover{
+  background-color: rgb(243, 0, 0); 
+  border: 1px solid black;
+}
+
+.container_price_re {
+  border-bottom: 2px solid #ed7902;
+}
+
+.container_price_re span{
+  margin: 10px;
+  border-bottom: 2px solid #ed7902;
+}
+
+.remover button{
+  margin-left: 10px;
+  cursor: pointer;
+  padding: 5px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  color: white;
+}
+.remover button:hover{
+  color: red;
+}
+.container_price_re{
+  font-weight: bold;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 10px 0;
+}
+
+.total span:nth-child(1) {
+  font-size: 2rem;
+  color: #ff9900;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.total span:nth-child(2) {
+  font-size: 2rem;
+  color: #DA291C;
+  font-weight: bold;
+  
+}
+/* .pedido button{
+  cursor: pointer;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: 1px solid white;
+} */
