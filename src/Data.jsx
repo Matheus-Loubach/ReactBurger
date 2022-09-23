@@ -78,7 +78,7 @@ const list = [
   },
   {
     id: 12,
-    title: "Mega Stacker Cheddar 3.0",
+    title: "M. Stacker Cheddar 3.0",
     price: 15,
     img: "https://d3sn2rlrwxy0ce.cloudfront.net/Mega-Stacker-cheddar-3.0-thumb-cupom-m-d_2022-07-21-170304_esmv.png?mtime=20220721170304&focal=none",
     amount: 1,

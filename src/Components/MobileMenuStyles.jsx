@@ -1,20 +1,18 @@
 import styled, {css} from "styled-components";
 export const Container = styled.section`
 position: absolute;
-backdrop-filter: blur(3px);
-width: 100%;
+// backdrop-filter: blur(1px);
+width: 90%;
 height: 70%;
 z-index: 5;
 align-items: center;
-display: flex;
 justify-content: center;
 background: rgba(17, 18, 17, 0.95);
 background: linear-gradient(34deg, #black 0%, rgba(17,18,17,0.95) 95%);
-opacity: 0;
+display:none;
 pointer-events: none;
-transform: translateX(100px);
-transition: .8s;
 border-bottom-left-radius:100px;
+
 
 > img {
   position: absolute;
@@ -34,8 +32,7 @@ img:hover{
 .carrinho{
  filter: invert(200%);
  font-size: 2rem;
- margin-left: 10px;
-
+ margin-left: 2px;
 }
 
 .carrinho span{
@@ -86,7 +83,7 @@ nav li{
 
 
 ${({ IsVisible }) => IsVisible && css`
-  opacity: 1;
+  display: flex;
   pointer-events: auto;
   transform: translateY(0px);
   > img {

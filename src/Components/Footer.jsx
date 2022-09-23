@@ -8,7 +8,7 @@ import '../CSS/Footer.css'
 const Footer = () => {
   return (
     <div>
-
+     
       <footer className='container_footer'>
             <ul>
               <li><img src={bk} alt="Logotipo bk" srcset="" /></li>

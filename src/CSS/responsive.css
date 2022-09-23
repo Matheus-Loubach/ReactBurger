@@ -1,75 +1,123 @@
-/*PC*/
-@media only screen and (min-width: 900px){
-  .MenuMobile{
-    display: none; 
-   }
-  section {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .sub_titulo h2{
-    font-size: 4em;
-  }
-  .details{
-    display: flex;
-  }
-  .sub_titulo{
-    margin: 5px 0 0 35%;
-  }
-  .imagem_box img {
-    width: 400px;
-    height: 350px;
-    margin-right: 50px;
-  }
-  .details :nth-child(1){
-    font-size: 1.5em;
-    display: flex;
-  }
-  .details :nth-child(2){
-    font-size: 1.5em;
-  }
-  .cards button{
-    padding: 5px;
-    margin: 5%;
-    font-size: 0.9em;
-  }
-}
+  /*PC*/
+  @media only screen and (min-width: 900px){
+    .MenuMobile{
+      display: none; 
+    }
+    section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .sub_titulo h2{
+      font-size: 4em;
+    }
+    .details{
+      display: flex;
+    }
+    .sub_titulo{
+      margin: 5px 0 0 35%;
+    }
+    .imagem_box img {
+      width: 400px;
+      height: 350px;
+      margin-right: 50px;
+    }
+    .details :nth-child(1){
+      font-size: 1.5em;
+      display: flex;
+    }
+    .details :nth-child(2){
+      font-size: 1.5em;
+    }
+    .cards button{
+      padding: 5px;
+      margin: 5%;
+      font-size: 0.9em;
+    }
 
-/*Mobile*/
-@media only screen and (max-width: 899px){
-  header{
-    display: none;
-  }
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .sub_titulo h2{
-    font-size: 2em;
-  }
-  .details{
-    display: block;
-  }
+    /*carrinho*/
+    article {
+      width: 20%;
+      margin: auto;
+    }
 
-  .imagem_box{
-    display: flex;
-  }
-  .imagem_box img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-    margin-bottom: 10%;
+    .img_carri img {
+      width: 150px;
+      height: 150px;
+    }
+    .img_carri p {
+      font-weight: bold;
+      margin-left: 10px;
+      
+    }
+
+    .remover button{
+      margin-right: 10px;
+    }
+    
   }
 
-  .details :nth-child(1){
-    font-size: 0.7em;
-    margin-bottom: 10px;
-  }
+  /*Mobile*/
+  @media only screen and (max-width: 899px){
+ 
+    header{
+      display: none;
+    }
+    
+    section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .sub_titulo h2{
+      font-size: 2em;
+    }
+    .details{
+      display: block;
+    }
 
-  .details :nth-child(2){
-    font-size: 1.2em;
+    .imagem_box{
+      display: flex;
+    }
+    .imagem_box img {
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+      margin-bottom: 10%;
+    }
+
+    .details :nth-child(1){
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0);
+      border-radius: 10px;
+      width: 150px;
+      height: 38px;
+      text-align: center;
+    }
+
+    .details :nth-child(2){
+      font-size: 1.2em;
+    }
+    .cards button{
+      padding: 5px;
+      margin: 3%;
+      font-size: 0.7em;
+    }
+
+    /*carrinho*/
+    article {
+      width: 100%;
+      margin: auto;
+      margin-right: 50%;
+    }
+
+    .img_carri img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .img_carri p {
+      font-weight: bold;
+      margin-left: 0px;
+    }
+    .remover button{
+      margin-right: 50px;
+    }
   }
-  .cards button{
-    padding: 5px;
-    margin: 3%;
-    font-size: 0.7em;
-  }
-}

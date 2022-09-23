@@ -9,11 +9,11 @@ const MenuMobile = ({menuOn, setMenuOn, AcomBebida,CarrinhoCart,MenuHambu,AcomSo
      <img src={Fechar} onClick={() => setMenuOn(false)}/>
      <div onClick={CarrinhoCart} className='carrinho'>
      <i className="fa fa-cart-plus" aria-hidden="true"></i>
-          <span>{qtdProdutos}</span> 
+     <span >{qtdProdutos}</span> 
      </div>
       <nav>
           <ul>
-          <li>Cardapio</li>
+          <li>Cardápio</li>
           <li onClick={MenuHambu}>Hambúgueres</li>            
           <li onClick={AcomBebida}>Bebidas</li>            
           <li onClick={AcomSobremesa}>Sobremesas</li>

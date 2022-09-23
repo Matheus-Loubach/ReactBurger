@@ -3,24 +3,9 @@
   padding: 0;
 }
 
-article {
-  width: 20%;
-  margin: auto;
-}
-
-.img_carri img {
-  width: 150px;
-  height: 150px;
-}
 .img_carri {
   display: flex;
   width: 400px;
-}
-
-.img_carri p {
-  font-weight: bold;
-  margin-left: 10px;
-  
 }
 
 .img_carri {
@@ -58,15 +43,14 @@ article {
   margin: 10px;
   border-bottom: 2px solid #ed7902;
 }
-
 .remover button{
-  margin-left: 10px;
   cursor: pointer;
   padding: 5px;
   background-color: rgb(0, 0, 0);
   border-radius: 10px;
   color: white;
 }
+
 .remover button:hover{
   color: red;
 }

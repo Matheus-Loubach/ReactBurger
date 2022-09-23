@@ -31,7 +31,7 @@ const NavBar = ({qtdProdutos, AcomBebida, CarrinhoCart, MenuHambu,AcomSobremesa,
            </div>     
         </nav>
          </header>     
-         <p onClick={() => setMenuOn(true)} className='MenuMobile'> <img src={menuBarra}/> </p>
+         <p className='MenuMobile' onClick={() => setMenuOn(true)} > <img src={menuBarra}/>ReactBurguer</p>
     </div>
   )
 }
