@@ -13,7 +13,7 @@ const Carrinho = ({cart, setCart}) => {
     setPreco(valor);
   }
 
-  //add produto
+  //add + produto
   const AddProdutos = (dados, p) =>{
     const ind = cart.indexOf(dados);
       const arr = cart;
@@ -21,15 +21,19 @@ const Carrinho = ({cart, setCart}) => {
   
       if (arr[ind].amount === 0) arr[ind].amount = 1;
       setCart([...arr]);
-  }
+  };
 
   //Remover Produto
   const RemoverProdutos = (id) => {
     const arr = cart.filter((item) => item.id !== id);
     setCart(arr);
-    handlePrice();
+    handlePrice(cart.id);
   };
-
+ 
+  const LimparCarrinho = ()=>{
+    const arr = cart.filter((item) => item.id !== item.id);
+    setCart(arr);
+  };
 
   useEffect(() => {
     handlePrice();
@@ -63,9 +67,14 @@ const Carrinho = ({cart, setCart}) => {
         <div className='container_price_re'>
         <span>Preço: R${dados.price}</span>
         </div>
-
+  
         </div>
         ))}
+
+        <div className='limpar'>
+        {(cart ==(0)) ? <span></span> : <span style={{backgroundColor: '#ed7902'}} onClick={LimparCarrinho}>Limpar Carrinho</span>}
+        </div>
+
         <div className="total">
         <span>Preço Total:</span>
         <span>R${preco}</span>

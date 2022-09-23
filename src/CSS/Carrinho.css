@@ -92,10 +92,17 @@ article {
   font-weight: bold;
   
 }
-/* .pedido button{
+
+.limpar :nth-child(1){
+  display: inline-block;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-weight: bolder;
   cursor: pointer;
-  padding: 10px;
-  background-color: green;
-  color: white;
-  border: 1px solid white;
-} */
+}
+
+.limpar :nth-child(1):hover{
+  transform: scale(1.1);
+}

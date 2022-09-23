@@ -1,5 +1,6 @@
 import React from 'react'
 import '../CSS/Products.css'
+import '../CSS/responsive.css'
  
  const Products = ({item, handleClick}) => {
 

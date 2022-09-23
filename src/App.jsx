@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+
+/*Componentes*/
 import Bebidas from "./Components/BebidasMenu";
 import Carrinho from "./Components/Carrinho";
 import Menu from "./Components/BurguerMenu";
 import NavBar from "./Components/NavBar";
 import SobremesaMenu from "./Components/SobremesaMenu";
 import Footer from "./Components/Footer";
+import MenuMobile from "./Components/MenuMobile";
 
 
 function App() {
@@ -24,6 +27,10 @@ function App() {
   //Dados para o carrinho
   const [cart, setCart] = useState([]);
 
+  //troca de menu
+  const [menuOn, setMenuOn] = useState(false) 
+
+  //add no carrinho
   const handleClick = (item) => {
     if (cart.indexOf(item) !== -1) return;
     setCart((cart => [...cart, item]));
@@ -45,8 +52,12 @@ function App() {
 
   return (
     <div>
-     {/*nav menu*/}
-     <NavBar qtdProdutos={cart.length} AcomBebida={AcomBebida} CarrinhoCart={CarrinhoCart} MenuHambu={MenuHambu} AcomSobremesa={AcomSobremesa}/>
+
+     {/*menu mobile*/}   
+     <MenuMobile  menuOn={menuOn} setMenuOn={setMenuOn} AcomBebida={AcomBebida} CarrinhoCart={CarrinhoCart} MenuHambu={MenuHambu} AcomSobremesa={AcomSobremesa} qtdProdutos={cart.length}/>
+
+     {/*nav menu PC*/}
+     <NavBar qtdProdutos={cart.length} setMenuOn={setMenuOn} AcomBebida={AcomBebida} CarrinhoCart={CarrinhoCart} MenuHambu={MenuHambu} AcomSobremesa={AcomSobremesa}/>
 
      {/*Cardapio hamburguer e carrinho*/}
      {estagio === 'hambuguer' && <Menu handleClick={handleClick}/>}
