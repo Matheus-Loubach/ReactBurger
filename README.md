@@ -7,10 +7,10 @@ Aplicação de Delivery com carrinho de compras.
 # Stack Utilizada
 ReactJS, JavaScript, CSS3, HTML5
 - Utilizei:
--useState()
--useEffect()
--styled-components
--functional component
+- useState()
+- useEffect()
+- styled-components
+- functional component
 
 #Totalmente responsivo Para Mobile!
 
